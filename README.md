@@ -1,2 +1,2 @@
 # home_page
-my home page 
+My simple TO BE home page
