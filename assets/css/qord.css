@@ -1,0 +1,38 @@
+.o {
+    z-index: 3;
+    width: 112px;
+    height: 210px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #000000;
+    background-color: transparent;
+    border-radius: 56px;
+    #position: relative;
+    #margin-right: -10000px;
+    #margin-top: -1px;
+    #left: 94px;
+}
+
+.one.columns { width: 13.66666666667% !important; }
+
+
+.container {
+    max-width: 600px !important;
+}
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+.one.columns { width: 11.66666666667% !important; }
+ }
