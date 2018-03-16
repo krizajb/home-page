@@ -1,38 +1,221 @@
-.o {
-    z-index: 3;
-    width: 112px;
-    height: 210px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: #000000;
-    background-color: transparent;
-    border-radius: 56px;
-    #position: relative;
-    #margin-right: -10000px;
-    #margin-top: -1px;
-    #left: 94px;
+.letter {
+  width: 112px;
+  height: 210px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #000000;
+  background-color: transparent;
+  border-radius: 56px;
+  position: absolute;
+  top: 75px;
 }
 
-.one.columns { width: 13.66666666667% !important; }
+.letter.link {
+  top: 385px;
+}
 
+.mail {
+  margin-left: 13%;
+}
+
+.github {
+  margin-left: 30.5%;
+}
+
+.linkedin {
+  margin-left: 48%;
+}
+
+.stackoverflow {
+  margin-left: 65.5%;
+}
+
+.delimiter {
+  width: 385px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
+  background-color: #000000;
+  border-radius: 8px 8px 8px 0px;
+  padding-bottom: 7px;
+  margin-top: 25px;
+  position: absolute;
+  margin-left: 14%;
+  top: 290px;
+}
+
+.text {
+  width: 387px;
+  line-height: 22px;
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 9px;
+}
+
+.row {
+  position: relative;
+}
+
+.row.first {
+  padding-top: 15%;
+}
+
+.letter.q {
+  margin-left: 13%;
+}
+
+.letter.o {
+  margin-left: 30.5%;
+}
+
+.letter.r {
+  margin-left: 48%;
+}
+
+.letter.d {
+  margin-left: 65.5%;
+}
+
+.left-offset {
+  margin-left: 11%;
+}
 
 .container {
-    max-width: 600px !important;
+  max-width: 360px;
+  margin-right: auto;
+  margin-left: auto;
 }
-.column,
-.columns {
-  width: 100%;
-  float: left;
-  box-sizing: border-box; }
 
-/* For devices larger than 400px */
-@media (min-width: 400px) {
+@media (min-width: 1200px) {
   .container {
-    width: 85%;
-    padding: 0; }
+    max-width: 1140px;
+  }
 }
 
-/* For devices larger than 550px */
-@media (min-width: 550px) {
-.one.columns { width: 11.66666666667% !important; }
- }
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 576px) {
+  .letter {
+    width: 89px;
+    height: 168px;
+  }
+
+  .letter.q {
+    margin-left: 5%;
+  }
+
+  .letter.o {
+    margin-left: 25.5%;
+  }
+
+  .letter.r {
+    margin-left: 46%;
+  }
+
+  .letter.d {
+    margin-left: 67%;
+  }
+
+  .delimiter {
+    width: 315px;
+    border-width: 0;
+    margin-left: 6%;
+    top: 243px;
+  }
+
+  .letter.link {
+    top: 325px;
+  }
+
+  .text {
+    width: 320px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .letter.mail {
+    margin-left: 5%;
+  }
+
+  .letter.github {
+    margin-left: 25.5%;
+  }
+
+  .letter.linkedin {
+    margin-left: 46%;
+  }
+
+  .letter.stackoverflow {
+    margin-left: 67%;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    max-width: 210px;
+  }
+
+  .letter {
+    border-width: 2px
+  }
+
+  .letter {
+    width: 53px;
+    height: 100px;
+  }
+
+  .letter.q {
+    margin-left: 5%;
+  }
+
+  .letter.o {
+    margin-left: 25.5%;
+  }
+
+  .letter.r {
+    margin-left: 46%;
+  }
+
+  .letter.d {
+    margin-left: 67%;
+  }
+
+  .delimiter {
+    width: 180px;
+    margin-left: 6%;
+    top: 170px;
+    padding-bottom: 0;
+  }
+
+  .text {
+    width: 183px;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    margin-top: 2px;
+    font-weight: 400;
+  }
+
+  .letter.link {
+    top: 225px;
+  }
+}
