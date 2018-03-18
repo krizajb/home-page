@@ -3,8 +3,6 @@ body {
 }
 
 .letter {
-  width: 112px;
-  height: 210px;
   border-width: 3px;
   border-style: solid;
   border-color: #000000;
@@ -34,9 +32,41 @@ body {
   margin-left: 65.5%;
 }
 
+.link > img {
+  margin-left: 32%;
+}
+
+.link.github > img {
+  width: 41px;
+  height: 27.5px;
+  margin-top: 78%;
+  margin-left: 28%;
+}
+
+.link.linkedin > img {
+  width: 34px;
+  height: 26px;
+  margin-top: 78%;
+}
+
+.link.mail > img {
+  width: 28px;
+  height: 22px;
+  margin-top: 82%;
+}
+
+.link.stackoverflow > img {
+  width: 32px;
+  height: 24px;
+  margin-top: 79%;
+}
+
 .delimiter {
-  width: 385px;
+  width: 314px;
   border-width: 2px;
+  margin-left: 5%;
+  top: 250px;
+
   border-style: solid;
   border-color: #000000;
   background-color: #000000;
@@ -44,8 +74,6 @@ body {
   padding-bottom: 7px;
   margin-top: 25px;
   position: absolute;
-  margin-left: 14%;
-  top: 290px;
 }
 
 .text {
@@ -57,34 +85,79 @@ body {
   text-align: center;
   font-weight: 600;
   margin-top: 9px;
+  user-select: none;
 }
 
 .row {
   position: relative;
 }
 
-.row.first {
-  padding-top: 15%;
+.letter {
+  width: 89px;
+  height: 168px;
+}
+
+.letter:hover {
+  background-color: #000000
 }
 
 .letter.q {
-  margin-left: 13%;
+  margin-left: 5%;
+}
+
+.letter.q1 {
+  width: 19px;
+  height: 40px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #000000;
+  background-color: transparent;
+  border-radius: 50px 0px 50px 0px;
+  -webkit-transform: matrix(0,1,-1,0,47,14);
+  -ms-transform: matrix(0,1,-1,0,47,14);
+  transform: matrix(0,1,-1,0,47,14);
+  margin-left: 7%;
+  top: 208px;
 }
 
 .letter.o {
-  margin-left: 30.5%;
+  margin-left: 25.5%;
 }
 
 .letter.r {
-  margin-left: 48%;
+  margin-left: 46%;
+  border-radius: 0px 45px 0px 0px;
 }
 
 .letter.d {
-  margin-left: 65.5%;
+  margin-left: 67%;
+  border-radius: 0px 45px 45px 0px;
 }
 
-.left-offset {
-  margin-left: 11%;
+.letter.link {
+  top: 340px;
+}
+
+.text {
+  width: 316px;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.letter.mail {
+  margin-left: 5%;
+}
+
+.letter.github {
+  margin-left: 25.5%;
+}
+
+.letter.linkedin {
+  margin-left: 46%;
+}
+
+.letter.stackoverflow {
+  margin-left: 67%;
 }
 
 .container {
@@ -115,61 +188,91 @@ body {
   .container {
     max-width: 540px;
   }
-}
 
-@media (max-width: 576px) {
   .letter {
-    width: 89px;
-    height: 168px;
+    width: 112px;
+    height: 210px;
   }
 
-  .letter.q {
-    margin-left: 5%;
+  .link.github > img {
+    width: 46px;
+    height: 34px;
+    margin-top: 77%;
+    margin-left: 29%;
   }
 
-  .letter.o {
-    margin-left: 25.5%;
+  .link.linkedin > img {
+    width: 42px;
+    height: 31px;
+    margin-top: 78%;
+    margin-left: 31%;
   }
 
-  .letter.r {
-    margin-left: 46%;
+  .link.mail > img {
+    width: 35px;
+    height: 27px;
+    margin-top: 82%;
+    margin-left: 34%;
   }
 
-  .letter.d {
-    margin-left: 67%;
+  .link.stackoverflow > img {
+    width: 40px;
+    height: 30px;
+    margin-top: 79%;
+    margin-left: 34%;
   }
 
-  .delimiter {
-    width: 315px;
-    border-width: 0;
-    margin-left: 6%;
-    top: 243px;
+  .letter:hover {
+    background-color: #000000
   }
 
   .letter.link {
-    top: 325px;
+    top: 415px;
+  }
+
+  .letter.q, .letter.mail {
+    margin-left: 13.5%;
+  }
+
+  .letter.q1 {
+    width: 26px;
+    height: 55px;
+    margin-left: 17%;
+    top: 243px;
+  }
+
+  .letter.o, .letter.github {
+    margin-left: 30.5%;
+  }
+
+  .letter.r, .letter.linkedin {
+    margin-left: 47.5%;
+  }
+
+  .letter.r {
+    border-radius: 0px 56px 0px 0px;
+  }
+
+  .letter.d, .letter.stackoverflow {
+    margin-left: 64.5%;
+  }
+
+  .letter.d {
+    border-radius: 0px 56px 56px 0px;
+  }
+
+  .delimiter {
+    width: 385px;
+    border-width: 2px;
+    margin-left: 14%;
+    top: 305px;
+    padding-bottom: 12px;
   }
 
   .text {
-    width: 320px;
-    font-size: 15px;
-    line-height: 18px;
-  }
-
-  .letter.mail {
-    margin-left: 5%;
-  }
-
-  .letter.github {
-    margin-left: 25.5%;
-  }
-
-  .letter.linkedin {
-    margin-left: 46%;
-  }
-
-  .letter.stackoverflow {
-    margin-left: 67%;
+    width: 383px;
+    font-size: 18px;
+    margin-top: 11px;
   }
 }
 
@@ -179,12 +282,21 @@ body {
   }
 
   .letter {
-    border-width: 2px
-  }
-
-  .letter {
     width: 53px;
     height: 100px;
+    border-width: 2px;
+  }
+
+  .letter:hover {
+    background-color: #000000
+  }
+
+  .letter.q1 {
+    width: 12px;
+    height: 25px;
+    border-width: 2px;
+    margin-left: -2.5%;
+    top: 149px;
   }
 
   .letter.q {
@@ -197,10 +309,12 @@ body {
 
   .letter.r {
     margin-left: 46%;
+    border-radius: 0px 28px 0px 0px;
   }
 
   .letter.d {
     margin-left: 67%;
+    border-radius: 0px 28px 28px 0px;
   }
 
   .delimiter {
@@ -220,6 +334,34 @@ body {
   }
 
   .letter.link {
-    top: 225px;
+    top: 235px;
+  }
+
+  .link.github > img {
+    width: 21px;
+    height: 15.4px;
+    margin-top: 78%;
+    margin-left: 31%;
+  }
+
+  .link.linkedin > img {
+    width: 19px;
+    height: 14px;
+    margin-top: 78%;
+    margin-left: 31%;
+  }
+
+  .link.mail > img {
+    width: 16px;
+    height: 12px;
+    margin-top: 82%;
+    margin-left: 34%;
+  }
+
+  .link.stackoverflow > img {
+    width: 18px;
+    height: 13.5px;
+    margin-top: 79%;
+    margin-left: 34%;
   }
 }
