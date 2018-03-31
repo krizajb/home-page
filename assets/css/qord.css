@@ -10,6 +10,8 @@ body {
   border-radius: 56px;
   position: absolute;
   top: 75px;
+  width: 89px;
+  height: 168px;
 }
 
 .letter.link {
@@ -70,7 +72,7 @@ body {
   border-style: solid;
   border-color: #000000;
   background-color: #000000;
-  border-radius: 8px 8px 8px 0px;
+  border-radius: 8px 8px 8px 0;
   padding-bottom: 7px;
   margin-top: 25px;
   position: absolute;
@@ -92,11 +94,6 @@ body {
   position: relative;
 }
 
-.letter {
-  width: 89px;
-  height: 168px;
-}
-
 .letter:hover {
   background-color: #000000
 }
@@ -111,7 +108,7 @@ body {
   border-width: 3px;
   border-style: solid;
   border-color: #000000;
-  border-radius: 50px 0px 50px 0px;
+  border-radius: 50px 0 50px 0;
   -webkit-transform: matrix(0,1,-1,0,47,14);
   -ms-transform: matrix(0,1,-1,0,47,14);
   transform: matrix(0,1,-1,0,47,14);
@@ -125,12 +122,12 @@ body {
 
 .letter.r {
   margin-left: 46%;
-  border-radius: 0px 45px 0px 0px;
+  border-radius: 0 45px 0 0;
 }
 
 .letter.d {
   margin-left: 67%;
-  border-radius: 0px 45px 45px 0px;
+  border-radius: 0 45px 45px 0;
 }
 
 .letter.link {
@@ -249,7 +246,7 @@ body {
   }
 
   .letter.r {
-    border-radius: 0px 56px 0px 0px;
+    border-radius: 0 56px 0 0;
   }
 
   .letter.d, .letter.stackoverflow {
@@ -257,7 +254,7 @@ body {
   }
 
   .letter.d {
-    border-radius: 0px 56px 56px 0px;
+    border-radius: 0 56px 56px 0;
   }
 
   .delimiter {
@@ -308,12 +305,12 @@ body {
 
   .letter.r {
     margin-left: 46%;
-    border-radius: 0px 28px 0px 0px;
+    border-radius: 0 28px 0 0;
   }
 
   .letter.d {
     margin-left: 67%;
-    border-radius: 0px 28px 28px 0px;
+    border-radius: 0 28px 28px 0;
   }
 
   .delimiter {
