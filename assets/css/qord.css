@@ -98,6 +98,10 @@ body {
   background-color: #000000
 }
 
+.letter.hover {
+  background-color: #000000
+}
+
 .letter.q {
   margin-left: 5%;
 }
