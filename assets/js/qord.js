@@ -1,10 +1,21 @@
 $(document).ready(function() {
 
   function animateLatter(latter) {
-    latter.addClass('hover');
-    setTimeout( function () {
-      latter.removeClass('hover')
-    }, 200);
+    // latter.toggleClass('hover');
+    // setTimeout( function () {
+    //   latter.toggleClass('hover')
+    // }, 200);
+
+    latter.fadeIn("slow", function() {
+      $(this).toggleClass("hover");
+    });
+
+    latter.fadeOut("slow", function() {
+      $(this).toggleClass("hover");
+      // $(this).fadeIn("slow");
+      $(this).css('display', 'block');
+    });
+
   }
 
   animateLatter($('.letter.q'));

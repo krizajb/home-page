@@ -68,7 +68,6 @@ body {
   border-width: 2px;
   margin-left: 5%;
   top: 250px;
-
   border-style: solid;
   border-color: #000000;
   background-color: #000000;
@@ -95,11 +94,11 @@ body {
 }
 
 .letter:hover {
-  background-color: #000000
+  background-color: #000000;
 }
 
 .letter.hover {
-  background-color: #000000
+  background-color: #000000;
 }
 
 .letter.q {
