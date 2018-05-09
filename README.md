@@ -1,2 +1,4 @@
-# home_page
-My simple TO BE home page
+# QORD homepage
+
+www.qord.si
+
